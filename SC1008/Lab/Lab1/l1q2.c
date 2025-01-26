@@ -2,13 +2,13 @@
 
 int main(void) {
     int lines;
-    printf("Enter number of lines :\n");
+    printf("Enter number of lines: \n");
     scanf("%d",&lines);
 
-    for (int i=0; i<lines; i++) {
+    for (int i=1; i<=lines; i++) {
         int sum=0,n=0;
         int d;
-        printf("Enter line X :\n");
+        printf("Enter line %d (end with -1): \n",i);
 
         while (1) {
             scanf("%d",&d);

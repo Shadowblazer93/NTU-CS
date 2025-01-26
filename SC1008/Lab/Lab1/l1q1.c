@@ -5,10 +5,10 @@ int main(void) {
     char grade;
 
     while (1) {
-        printf("Enter Student ID :\n");
+        printf("Enter Student ID: \n");
         scanf("%d",&id);
         if (id==-1) break;
-        printf("Enter Mark :\n");
+        printf("Enter Mark: \n");
         scanf("%d",&mark);
         if (mark==-1) break;
 
@@ -19,6 +19,5 @@ int main(void) {
         if (mark<=44) grade='F';
 
         printf("Grade = %c\n",grade);
-        return 0;
     }
 }
