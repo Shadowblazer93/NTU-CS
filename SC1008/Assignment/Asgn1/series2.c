@@ -1,21 +1,18 @@
-#include <stdio.h>
+# include <stdio.h>
 
 int main(void) {
-    double x, res = 0;
-    unsigned long long ftl = 1;
-    int neg = 1;
+    double x,res=1;
     printf("Enter a number:\n");
-    scanf("%f",&x);
+    scanf("%lf",&x);
 
-    for(int i=1;i<=20;i++) {
-        ftl *= i;
-        neg = neg<0 ? 1 : -1;
+    double num=1,den=1;
 
-        double k = 1.0;
-        for (int j=0; j<i; j++) k *= x;
-        k /= neg*ftl;
-        res += k;
+    for (int i=1; i<=20; i++) {
+        num *= x;
+        den *= i;
+        double term = num/den;
+        res += i%2 ? -1*term : term;
     }
 
-    printf("%d",res);
+    printf("Result = %.2f\n",res);
 }
