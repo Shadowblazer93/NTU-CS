@@ -8,7 +8,7 @@ int main(void) {
         scanf("%d",&year);
         if (year==-1) break;
 
-        char horoscopes[12][10] = {"Monkey","Rooster","Dog","Pig","Rat","Cow","Tiger","Rabbit","Dragon","Snake","Horse","Goat"};
+        char *horoscopes[12] = {"Monkey","Rooster","Dog","Pig","Rat","Cow","Tiger","Rabbit","Dragon","Snake","Horse","Goat"};
         hor = horoscopes[year%12];
         printf("chineseHoroscope: %s\n",hor);
     }

@@ -13,10 +13,10 @@ int main(void) {
         if (mark==-1) break;
 
         if (mark>=75 && mark<=100) grade='A';
-        if (mark>=65 && mark<=74) grade='B';
-        if (mark>=55 && mark<=64) grade='C';
-        if (mark>=45 && mark<=54) grade='D';
-        if (mark<=44) grade='F';
+        else if (mark>=65 && mark<=74) grade='B';
+        else if (mark>=55 && mark<=64) grade='C';
+        else if (mark>=45 && mark<=54) grade='D';
+        else if (mark<=44) grade='F';
 
         printf("Grade = %c\n",grade);
     }

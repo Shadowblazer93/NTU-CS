@@ -2,7 +2,7 @@ package SC2002.LAB1;
 
 import java.util.Scanner;
 
-public class l1q1 {
+public class P1 {
     public static void main(String[] args) {
         System.out.println("Enter a character : ");
 

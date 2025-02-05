@@ -14,6 +14,8 @@ int main()
 }
 int numDigits1(int num)
 {
+   if (num==0) return 1;
+   
    int r=0;
    while (num>0) {
     r++;
@@ -23,6 +25,11 @@ int numDigits1(int num)
 }
 void numDigits2(int num, int *result)
 {
+   if (num==0) {
+      *result = 1;
+      return ;
+   }
+
    *result = 0;
    while (num>0) {
     *result = *result + 1;

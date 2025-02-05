@@ -1,7 +1,7 @@
 package SC2002.LAB1;
 import java.util.Scanner;
 
-public class l1q2 {
+public class P2 {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         System.out.println("Enter salary : ");
@@ -12,7 +12,8 @@ public class l1q2 {
 
         Character grade = 'z';
 
-        if (salary>=700 && salary<=899) {
+        if (salary>=900) System.out.println("Unknown grade, salary more than 899");
+        else if (salary>=700 && salary<=899) {
             if (salary<=799) grade = merit<20 ? 'B' : 'A';
             else grade = 'A';
         } else if (salary>=600 && salary<=799) {

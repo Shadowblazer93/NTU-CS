@@ -19,6 +19,7 @@ int square1(int num)
 }   
 void square2(int num, int *result)
 {  
+   *result = 0;
    for (int i=1; i<num*2; i+=2) {
     *result = *result+i;
    }

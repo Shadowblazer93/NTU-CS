@@ -1,7 +1,7 @@
 package SC2002.LAB1;
 import java.util.Scanner;
 
-public class l1q3 {
+public class P3 {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         System.out.println("Enter start : ");
@@ -13,7 +13,7 @@ public class l1q3 {
         s.close();
 
         if (start>end) {
-            System.out.println("Error input!");
+            System.out.println("Error input!!");
             return;
         }
 
@@ -22,7 +22,7 @@ public class l1q3 {
         System.out.println("--------------");
 
         for (int i=start;i<=end;i+=incr) {
-            if (i<10) System.out.print('0');
+            // if (i<10) System.out.print('0');
             System.out.println(i+"          "+i*1.82);
         }
 

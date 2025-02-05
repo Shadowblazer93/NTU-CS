@@ -31,10 +31,9 @@ void digitPos2(int num, int digit, int *result)
     while (num>0) {
         if (num%10==digit) {
             *result=pos;
-            break;
-        } else {
-            pos++;
-            num/=10;
+            return;
         }
+        pos++;
+        num/=10;
     }
 }
