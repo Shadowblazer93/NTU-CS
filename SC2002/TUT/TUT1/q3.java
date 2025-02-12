@@ -1,4 +1,4 @@
-package SC2002.TUT1;
+package SC2002.TUT.TUT1;
 import java.util.Scanner;
 
 public class q3 {
