@@ -16,7 +16,13 @@ int main() {
     } 
 } 
 void reverseAr1D(int ar[], int size) {
-    int arcopy[size];
-    for (int i=0; i<size; i++) arcopy[i] = ar[size-i-1];
-    for (int i=0; i<size; i++) ar[i] = arcopy[i];
+    // int arcopy[size];
+    // for (int i=0; i<size; i++) arcopy[i] = ar[size-i-1];
+    // for (int i=0; i<size; i++) ar[i] = arcopy[i];
+    int k;
+    for (int i=0;i<size/2;i++) {
+        k = ar[i];
+        ar[i] = ar[size-i-1];
+        ar[size-i-1] = k;
+    }
 }
