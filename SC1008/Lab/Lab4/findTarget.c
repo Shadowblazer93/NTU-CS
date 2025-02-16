@@ -36,22 +36,25 @@ int main()
             break;
       }
    } while (choice < 4);       
-   return 0;
 }
-void printNames(char nameptr[][80], int size)
-{
-   /* Write your program code here */
-}
-void readNames(char nameptr[][80], int *size)
-{
-   int n;
-   printf("Enter size:\n");
-   scanf("%d",&n);
-   char names[SIZE];
-   printf("Enter %d names:\n",n);
 
+void printNames(char nameptr[][80], int size) {
+   if (size==0) return;
+   for (int i=0;i<size;i++) printf("%s ",nameptr[i]);
+   printf("\n");
 }
-int findTarget(char *target, char nameptr[][80], int size)
-{
-   /* Write your program code here */
+
+void readNames(char nameptr[][80], int *size) {
+   printf("Enter size:\n");
+   scanf("%d",size);
+   
+   printf("Enter %d names:\n",*size);
+   for (int i=0;i<*size;i++) {
+      scanf("%s",nameptr[i]);
+      }
+}
+
+int findTarget(char *target, char nameptr[][80], int size) {
+   for (int i=0;i<size;i++) if (strcmp(target,nameptr[i])==0) return i;
+   return -1;
 }
