@@ -1,4 +1,4 @@
-package SC2002.LAB1;
+package SC2002.LAB.LAB1;
 
 import java.util.Scanner;
 
