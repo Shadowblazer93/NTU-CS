@@ -17,4 +17,6 @@ int main() {
 void rFindMaxAr(int *ar, int size, int *max) {
     if (size<1) return;
     if (ar[size-1]>*max) *max = ar[size-1];
+    rFindMaxAr(ar,size-1,max);
 }
+
